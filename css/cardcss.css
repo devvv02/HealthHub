@@ -1,0 +1,19 @@
+.cards-body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card{
+    margin-left: 50px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+
+}
+
+.card a{
+    margin-left: 40%;
+    background-color: #2937f0;
+
+}

@@ -1,0 +1,157 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    background: url(login-image1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* img {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+.login-rect {
+    /* width: 90%;
+    max-width: 570px;
+    padding: 20px;
+    backdrop-filter: blur(3px);
+    border-radius: 45px;
+    background-color:  rgba(248, 248, 248, 0.31); */
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    width: 490px;
+    height: 472px;
+    backdrop-filter: blur(3px);
+    border-radius: 45px;
+    /* background-color:  rgba(248, 248, 248, 0.31); */
+
+}
+
+
+.login-text{
+    position: absolute;
+    color: #07074d;
+    left: 200px;
+    top: 40px;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.mobile-text {
+    position: absolute;
+    top: 100px;
+    left: 54px;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 500;
+    width: 100%;
+}
+
+.otp-text{
+    position: absolute;
+    top: 200px;
+    left: 54px;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 500;
+    width: 100%;
+
+}
+
+.input{
+    position: absolute;
+    height: 35px;
+    width: 370px;
+    border-radius: 7px;
+    /* background-color: #F1EBE5; */
+    background: white;
+    margin-bottom: 20px;
+    padding: 5px;
+    /* box-sizing: border-box; */
+    border: none;
+    
+}
+
+.forgot-pwd{
+    position: absolute;
+    color: #07074d;
+    top: 280px;
+    left: 300px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    align-self: flex-end;
+}
+
+.otp-btn{
+    position: absolute;
+    top: 330px;
+    left: 130px;
+    background-color: #334EAC;
+    height: 46px;
+    width: 228px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #FFF9F0;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.signup{
+    position: absolute;
+    top: 400px;
+}
+
+
+
+
+/* Responsiveness */
+
+@media (max-width: 768px) {
+    .login-text{
+        font-size: 1.8rem;
+    }
+
+    .mobile-text, .otp-text{
+        font-size: 1rem;
+    }
+    
+    .otp-btn{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-text{
+        font-size: 1.5rem;
+    }
+
+    .mobile-text, .otp-text{
+        font-size: 0.9rem;
+    }
+
+    .otp-btn{
+        font-size: 0.9rem;
+    }
+}

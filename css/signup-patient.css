@@ -1,0 +1,147 @@
+body{
+    
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background: url(signup-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.login-rect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    position: absolute;
+    top: 150px;
+    left: 950px;
+    width: 490px;
+    height: 500px;
+    backdrop-filter: blur(3px);
+    border-radius: 45px;
+    background-color:  rgba(248, 248, 248, 0.4);
+
+}
+
+
+.login-text{
+    position: absolute;
+    color: #07074d;
+    left: auto;
+    top: 40px;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+
+.input{
+    position: absolute;
+    height: 35px;
+    width: 370px;
+    border-radius: 7px;
+    /* background-color: #F1EBE5; */
+    background: white;
+    margin-bottom: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    color: #000000;
+    font-weight: 500;
+    border: none;
+}
+
+.select-gender {
+    position: absolute;
+    display: inline;
+    flex-direction: row;
+    top: 190px;
+    left: 60px;
+    font-size: 1.2rem;
+
+}
+
+.gender-class{
+    padding-right: 30px;
+}
+
+.dob-class{
+    position: absolute;
+    display: inline;
+    flex-direction: row;
+    top: 230px;
+    left: 60px;
+    font-size: 1.2rem;   
+
+}
+
+/* Error
+#male, #female{
+    padding-inline: 20px;
+} */
+
+.login-btn{
+    position: absolute;
+    top: 390px;
+    left: 130px;
+    background-color: #334EAC;
+    height: 46px;
+    width: 228px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #FFF9F0;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.signup{
+    position: absolute;
+    top: 400px;
+}
+
+
+
+
+/* Responsiveness */
+
+@media (max-width: 768px) {
+    .login-text{
+        font-size: 1.8rem;
+    }
+
+    .mobile-text, .otp-text{
+        font-size: 1rem;
+    }
+    
+    .otp-btn{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-text{
+        font-size: 1.5rem;
+    }
+
+    .mobile-text, .otp-text{
+        font-size: 0.9rem;
+    }
+
+    .otp-btn{
+        font-size: 0.9rem;
+    }
+}
